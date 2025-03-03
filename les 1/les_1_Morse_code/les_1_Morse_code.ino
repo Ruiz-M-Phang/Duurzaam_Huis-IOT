@@ -1,13 +1,15 @@
 void setup() {
   // Set pin D3 on the NodeMCU as an
   // output pin so it can send voltages
+  Serial.begin(115200);
   pinMode(D3, OUTPUT);
 
-  Serial.println("");
-  Serial.println("RUIZ");
 }
 
 void loop() {
+  Serial.println("RUIZ");
+  delay(1000);
+  
 // R in morse code
   // set a voltage on D3
   digitalWrite(D3, HIGH);
@@ -130,15 +132,5 @@ void loop() {
   digitalWrite(D3, LOW);
   // wait 250 miliseconds
   delay(250);
-
-// volledige letters staan
-  // set a voltage on D3
-  digitalWrite(D3, HIGH);
-  // wait 500 milisecond
-  delay(500);
-  // remove voltage from D3
-  digitalWrite(D3, LOW);
-  // wait 1500 miliseconds
-  delay(1500);
  
 }
