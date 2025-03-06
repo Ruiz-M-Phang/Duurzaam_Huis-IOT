@@ -40,7 +40,7 @@ void loop() {
 
 // pinMode = D6
   if (B > C,B > A,C < A){
-    digitalWrite(65, HIGH);
+    digitalWrite(D6, HIGH);
     Serial.println("B is groter dan C en B is groter dan A en C is kleiner dan A");
     delay(10000);
     digitalWrite(D6, LOW);
